@@ -1,0 +1,24 @@
+.scrollTop 
+{
+    position: fixed;
+    bottom: 800px;
+    right: 40px;
+    width: 60px;
+    height: 60px;
+    background: rgb(0, 0, 0) url("{{ asset('img/up-arrow.png') }}") ;
+    border-radius: 50%;
+    background-size: 40px;
+    background-position: center;
+    background-repeat: repeat;
+    cursor: pointer;
+    z-index: 100000;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0,5s;
+}
+.scrollTop.active
+{
+    visibility: visible;
+    opacity: 1;
+    bottom: 40px;
+}
